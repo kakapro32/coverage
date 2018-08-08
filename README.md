@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/kakapro32/coverage/branch/master/graph/badge.svg)](https://codecov.io/gh/kakapro32/coverage)
+[![coverage](https://codecov.io/gh/kakapro32/coverage/branch/master/graph/badge.svg)](https://codecov.io/gh/kakapro32/coverage)
 # coverage
 1. Create account on https://codecov.io -> get token 
 2. Install `jest` and config in `package.json`

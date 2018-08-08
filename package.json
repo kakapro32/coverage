@@ -4,12 +4,16 @@
     "engines": {
         "node": ">=7.5"
     },
+    "jest": {
+        "verbose": true,
+        "testEnvironment": "node",
+        "coverageDirectory": "./coverage/",
+        "collectCoverage": true
+    },
     "description": "coverage testing",
     "main": "test.js",
     "scripts": {
-        "coverage": "istanbul cover ./test.js",
-        "debug": "node --inspect ./node_modules/.bin/serverless offline -s dev",
-        "lint": "eslint functions"
+        "test": "jest"
     },
     "repository": {
         "type": "git"
@@ -17,7 +21,12 @@
     "author": "Duy Man",
     "license": "MIT",
     "devDependencies": {
-        "istanbul": "^0.4.5"
+        "istanbul": "^0.4.5",
+        "jest": "^23.4.2",
+        "mocha": "^5.2.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "codecov": "^3.0.4",
+        "expect": "^23.4.0"
+    }
 }

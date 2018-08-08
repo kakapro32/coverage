@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\duyman\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js test
+
+PATH: 
+  C:\Users\duyman\Desktop\work\apache-maven-3.3.9\bin;C:\Users\duyman\Desktop\work\ffmpeg-20140905-git-720c21d-win64-static\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;c:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLI\;C:\Program Files\nodejs\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Users\duyman\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\duyman\AppData\Local\Programs\Python\Python36\;C:\Users\duyman\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\duyman\Desktop\work\apache-maven-3.3.9\bin;C:\Users\duyman\AppData\Local\Programs\Python\Python35-32\;C:\Users\duyman\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_65\bin;C:\Program Files\Heroku\bin;D:\gradle-3.5-all\gradle-3.5\bin;;C:\Program Files\Microsoft VS Code\bin;C:\Users\duyman\AppData\Roaming\npm
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.11.1
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+      "name": "coverage",
+      "version": "1.0.0",
+      "engines": {
+          "node": ">=7.5"
+      },
+      "description": "coverage testing",
+      "main": "test.js",
+      "scripts": {
+          "test": "jest",
+          "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec",
+          "debug": "node --inspect ./node_modules/.bin/serverless offline -s dev",
+          "lint": "eslint functions"
+      },
+      "repository": {
+          "type": "git"
+      },
+      "author": "Duy Man",
+      "license": "MIT",
+      "devDependencies": {
+          "istanbul": "^0.4.5",
+          "jest": "^23.4.2",
+          "mocha": "^5.2.0"
+      },
+      "dependencies": {
+          "codecov": "^3.0.4",
+          "expect": "^23.4.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c jest
+  Directory: C:\Users\duyman\Desktop\coverage
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\duyman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\duyman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\duyman\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

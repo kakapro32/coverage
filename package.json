@@ -1,0 +1,23 @@
+{
+    "name": "coverage",
+    "version": "1.0.0",
+    "engines": {
+        "node": ">=7.5"
+    },
+    "description": "coverage testing",
+    "main": "test.js",
+    "scripts": {
+        "coverage": "istanbul cover ./test.js",
+        "debug": "node --inspect ./node_modules/.bin/serverless offline -s dev",
+        "lint": "eslint functions"
+    },
+    "repository": {
+        "type": "git"
+    },
+    "author": "Duy Man",
+    "license": "MIT",
+    "devDependencies": {
+        "istanbul": "^0.4.5"
+    },
+    "dependencies": {}
+}

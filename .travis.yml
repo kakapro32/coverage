@@ -4,5 +4,7 @@ node_js:
 cache:
   directories:
   - node_modules
+before_install:
+  - pip install --user codecov
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - codecov --file coverage/lcov.info --disable search

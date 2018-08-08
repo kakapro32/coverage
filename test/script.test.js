@@ -6,7 +6,6 @@ test('should return false', () => {
 test('should return true', () => {
     expect(simple.math(1)).toBe(true);
 });
-
 test('should return null', () => {
     expect(simple.math(2)).toBe(null);
 });
